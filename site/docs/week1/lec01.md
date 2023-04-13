@@ -1,4 +1,4 @@
-# Lecture 1 - From Randomness To Probability Theory
+# Lecture 1 - From Uncertainty To Probability Theory
 
 ## Readings
 

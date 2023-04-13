@@ -1,10 +1,13 @@
 site_name: CSCI 2244 Fall 2023
+repo_name: tmt514/CSCI2244Fall23
+repo_url: https://github.com/tmt514/CSCI2244Fall23
 theme:
   name: material
   features:
     - content.code.annotate
     - content.code.copy
     - content.code.select
+    - header.autohide
   icon:
     admonition:
       note: octicons/pencil-16
@@ -22,10 +25,29 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.tabbed:
+      alternate_style: true 
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 plugins:
   - table-reader

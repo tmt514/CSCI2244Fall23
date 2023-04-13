@@ -17,7 +17,7 @@
 
 ## Probability Axioms
 
-```python3
+``` py hl_lines="2 3"
 import ok
 class Dice:
   y = x
