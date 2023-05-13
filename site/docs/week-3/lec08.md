@@ -1,14 +1,15 @@
-# Lecture 8 - Frequentist vs. Bayesian
+# Lecture 8 - Bayes' Rule
 
 !!! note "Agenda"
 
     1. Bayes' Rule
     2. How to interpret random experiments?
+    3. Frequentist vs. Bayesian
 
     
 ## Reading
 
-* [Alvarez] Sections 6.3.
+* [Alvarez] Sections 6.1-6.2.
 
 ## Extra Reading
 

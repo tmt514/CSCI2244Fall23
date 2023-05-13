@@ -8,6 +8,9 @@ theme:
     - content.code.copy
     - content.code.select
     - header.autohide
+    # - navigation.expand
+    - toc.integrate
+    - navigation.footer
   icon:
     admonition:
       note: octicons/pencil-16
@@ -51,6 +54,8 @@ markdown_extensions:
 
 plugins:
   - table-reader
+  - search
+  - awesome-pages
 
 extra_javascript:
   - javascripts/mathjax.js

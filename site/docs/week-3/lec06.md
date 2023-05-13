@@ -3,10 +3,10 @@
 !!! note "Agenda"
 
     1. Random variables are functions on a probability space.
-    2. Concepts from CS: "mapping" and "filtering".
+    2. Concepts from data science and functional programming: "mapping" and "filtering".
     3. Indicator random variables.
     4. Independent random variables.
-    5. The Coupon Collection Problem.
+    5. Concepts from randomized algorithms: Principle of Deferred Decisions.
     
 ## Reading
 
