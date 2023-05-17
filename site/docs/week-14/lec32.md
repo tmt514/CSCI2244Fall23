@@ -1,9 +1,10 @@
-# Lecture 32 - Branching Process
+# Lecture 32 - Intro to Branching Process
 
 !!! note "Agenda"
 
-    1. 
+    1. Random process
+    2. Galton-Watson process
     
 ## Reading
 
-* Optional.
+* [https://www.rand.org/content/dam/rand/pubs/reports/2009/R381.pdf](https://www.rand.org/content/dam/rand/pubs/reports/2009/R381.pdf)

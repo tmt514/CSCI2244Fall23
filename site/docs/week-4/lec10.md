@@ -5,6 +5,7 @@
     1. Expected Values
     2. Linearity of Expectation
     3. The Coupon Collector's Problem.
+    4. Simpson's paradox.
 
 
     

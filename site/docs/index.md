@@ -27,23 +27,23 @@ We will use the book written by [Professor Sergio A. Alvarez](http://cs.bc.edu/~
 
 ## Grading
 
-* 27% Homeworks: There will be 12 problem sets.
-The highest 9 PS scores count towards to your homework grade.
-* 18% Exam 1. (50 minutes)
-* 18% Exam 2. (50 minutes)
-* 36% Exam 3. (2 hours)
-* 1% if I can recognize you at the end of the semester.
+* 20% Homeworks: There will be 10 problem sets.
+The highest 8 PS scores count towards to your homework grade.
+* 20% Exam 1. (50 minutes)
+* 20% Exam 2. (50 minutes)
+* 40% Exam 3. (2 hours and 45 minutes)
+* +1% if I can recognize you at the end of the semester.
 
 ## Homeworks
 
-There will be 12 problem sets, and each problem set is released at least 168 hours before due.
-The typical deadline is 10PM (ET) but I allow submissions up to 11:59PM (ET) on the same day. <b>I do not accept submissions later than 11:59PM. This is a hard constraint, no excuse, sorry.</b> (That's why we dropped 3 PS scores!)
+There will be 10 problem sets, and each problem set is released at least 168 hours before due.
+A typical deadline is Wednesday 10PM (ET) but I allow submissions up to 11:59PM (ET) on the same day. <b>I do not accept submissions later than 11:59PM. This is a hard constraint, no excuse, sorry.</b> (That's why we dropped 2 PS scores!)
 
-Each homework is worth of 20 points, and usually consists of three parts:
+Each homework is worth of 20 points (=2.5% term grade), and usually consists of three parts:
 
-1. Writing Assignments (Mostly Mathematical Proofs). (12 points)
-2. Canvas Quizzes. (4 points)
-3. Programming Assignments. (4 points)
+1. Writing Assignments (12 points): mostly mathematical proofs.
+2. Canvas Quizzes (4 points): concepts & calculations.<br/><div style="color:gray;font-size:80%;margin-top:-5px;">50 minutes, 8 random questions, unlimited number of attempts!</div>
+3. Programming Assignments (4 points): experiments & empirical analysis.
 
 Occasionally there are bonus questions. However, bonus questions are usually significantly more challenging, and require much more effort.
 
@@ -95,16 +95,20 @@ Please see [this page](https://www.bc.edu/content/bc-web/offices/student-affairs
 
 ``` mermaid
 graph LR
-  subgraph prerequisite
+  subgraph Y [prerequisite]
+    X(MATH 1102/1103<br/><b>Calculus I/II</b>)
+  end
+  subgraph W ["also prerequisite"]
     direction TB
     A(CSCI 2243 <br/><b>Logic and Computation</b>) -.-|OR| C(MATH 2216 <br/><b>Intro to abstract Math</b>)
   end
-  P(CSCI 1101 <br/><b>Computer Science I</b>) --> prerequisite
-  prerequisite --> D(CSCI 2244 <br/><b>Randomness and Computation</b>)
+  Y --> D;
+  P(CSCI 1101 <br/><b>Computer Science I</b>) --> W
+  W --> D(CSCI 2244 <br/><b>Randomness and Computation</b>)
   click C "http://fmwww.bc.edu/gross/MATH2216/" "A good resource to MATH 2216."
 ```
 
-* We will need a little bit of MATH 1101/1102 (<b>Calculus I/II</b>). For example, please don't be afraid of the symbols in the following expression:
+* We will need (<s>more than</s>) a little bit of MATH 1102/1103 (<b>Calculus I/II</b>). For example, please don't be afraid of the symbols in the following expression:
 
 $$ \int_{-\infty}^\infty e^{-x^2} \, \mathrm{d}{x} = \sqrt{\pi}. $$
 
