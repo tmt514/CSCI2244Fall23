@@ -1544,20 +1544,20 @@ You can find most of course-related materials here.</p>
 </ul>
 <h2 id="grading">Grading</h2>
 <ul>
-<li>27% Homeworks: There will be 12 problem sets.
-The highest 9 PS scores count towards to your homework grade.</li>
-<li>18% Exam 1. (50 minutes)</li>
-<li>18% Exam 2. (50 minutes)</li>
-<li>36% Exam 3. (2 hours)</li>
-<li>1% if I can recognize you at the end of the semester.</li>
+<li>20% Homeworks: There will be 10 problem sets.
+The highest 8 PS scores count towards to your homework grade.</li>
+<li>20% Exam 1. (50 minutes)</li>
+<li>20% Exam 2. (50 minutes)</li>
+<li>40% Exam 3. (2 hours and 45 minutes)</li>
+<li>+1% if I can recognize you at the end of the semester.</li>
 </ul>
 <h2 id="homeworks">Homeworks</h2>
-<p>There will be 12 problem sets, and each problem set is released at least 168 hours before due.
-The typical deadline is 10PM (ET) but I allow submissions up to 11:59PM (ET) on the same day. <b>I do not accept submissions later than 11:59PM. This is a hard constraint, no excuse, sorry.</b> (That's why we dropped 3 PS scores!)</p>
-<p>Each homework is worth of 20 points, and usually consists of three parts:</p>
+<p>There will be 10 problem sets, and each problem set is released at least 168 hours before due.
+A typical deadline is Wednesday 10PM (ET) but I allow submissions up to 11:59PM (ET) on the same day. <b>I do not accept submissions later than 11:59PM. This is a hard constraint, no excuse, sorry.</b> (That's why we dropped 2 PS scores!)</p>
+<p>Each homework is worth of 20 points (=2.5% term grade), and usually consists of three parts:</p>
 <ol>
 <li>Writing Assignments (12 points): mostly mathematical proofs.</li>
-<li>Canvas Quizzes (4 points): concepts &amp; calculations.</li>
+<li>Canvas Quizzes (4 points): concepts &amp; calculations.<br/><div style="color:gray;font-size:80%;margin-top:-5px;">50 minutes, 8 random questions, unlimited number of attempts!</div></li>
 <li>Programming Assignments (4 points): experiments &amp; empirical analysis.</li>
 </ol>
 <p>Occasionally there are bonus questions. However, bonus questions are usually significantly more challenging, and require much more effort.</p>
@@ -1594,15 +1594,19 @@ a range of support services for students who need help on mental health.
 Please see <a href="https://www.bc.edu/content/bc-web/offices/student-affairs/sites/counseling.html">this page</a>.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <pre class="mermaid"><code>graph LR
-  subgraph prerequisite
+  subgraph Y [prerequisite]
+    X(MATH 1102/1103&lt;br/&gt;&lt;b&gt;Calculus I/II&lt;/b&gt;)
+  end
+  subgraph W ["also prerequisite"]
     direction TB
     A(CSCI 2243 &lt;br/&gt;&lt;b&gt;Logic and Computation&lt;/b&gt;) -.-|OR| C(MATH 2216 &lt;br/&gt;&lt;b&gt;Intro to abstract Math&lt;/b&gt;)
   end
-  P(CSCI 1101 &lt;br/&gt;&lt;b&gt;Computer Science I&lt;/b&gt;) --&gt; prerequisite
-  prerequisite --&gt; D(CSCI 2244 &lt;br/&gt;&lt;b&gt;Randomness and Computation&lt;/b&gt;)
+  Y --&gt; D;
+  P(CSCI 1101 &lt;br/&gt;&lt;b&gt;Computer Science I&lt;/b&gt;) --&gt; W
+  W --&gt; D(CSCI 2244 &lt;br/&gt;&lt;b&gt;Randomness and Computation&lt;/b&gt;)
   click C "http://fmwww.bc.edu/gross/MATH2216/" "A good resource to MATH 2216."</code></pre>
 <ul>
-<li>We will need a little bit of MATH 1101/1102 (<b>Calculus I/II</b>). For example, please don't be afraid of the symbols in the following expression:</li>
+<li>We will need (<s>more than</s>) a little bit of MATH 1102/1103 (<b>Calculus I/II</b>). For example, please don't be afraid of the symbols in the following expression:</li>
 </ul>
 <div class="arithmatex">\[ \int_{-\infty}^\infty e^{-x^2} \, \mathrm{d}{x} = \sqrt{\pi}. \]</div>
 <ul>
@@ -1634,85 +1638,85 @@ Please see <a href="https://www.bc.edu/content/bc-web/offices/student-affairs/si
 <tr>
 <td align="center">2</td>
 <td align="center">4~5<br/>9/4 - 9/8</td>
-<td align="left">No class on 9/4 Labor Day<br/>9/4 PS2 Release<br/><b>9/5</b> PS1 Due<br/>9/6 Add/Drop Deadline</td>
+<td align="left">No class on 9/4 Labor Day<br/><b>9/6</b> PS1 Due<br/>9/6 PS2 Release<br/>9/6 Add/Drop Deadline</td>
 <td align="left">Combinatorics</td>
 </tr>
 <tr>
 <td align="center">3</td>
 <td align="center">6~8<br/>9/11 - 9/15</td>
-<td align="left">9/11 PS3 Release<br/><b>9/12</b> PS2 Due</td>
+<td align="left">9/13 PS2 Due<br/>9/13 PS3 Release</td>
 <td align="left">Random Variables<br/>Conditional Probability</td>
 </tr>
 <tr>
 <td align="center">4</td>
 <td align="center">9~11<br/>9/18 - 9/22</td>
-<td align="left">9/18 PS3 Due<br/> 9/18 PS4 Release</td>
+<td align="left">9/20 PS3 Due<br/>9/20 PS4 Release</td>
 <td align="left">Important Distributions<br/>Expected Value</td>
 </tr>
 <tr>
 <td align="center">5</td>
 <td align="center">12~14<br/>9/25 - 9/29</td>
-<td align="left">9/25 PS4 Due<br/>9/25 PS5 Release<br/>9/27 Sample Exam 1 Release<br/>9/29 Family Weekend</td>
+<td align="left">9/27 PS4 Due<br/>9/27 Sample Exam 1 Release<br/>9/29 Family Weekend</td>
 <td align="left">Variance<br/>Chernoff Bounds</td>
 </tr>
 <tr>
 <td align="center">6</td>
 <td align="center">--<br/>10/2 - 10/6</td>
-<td align="left">10/2 PS5 Due<br/>10/2 Review Section<br/>10/2 Drop without "W" Deadline<br/><b>10/4 Exam 1</b><br/>10/6 Fall Break</td>
+<td align="left">10/2 Review Section<br/>10/2 Drop without "W" Deadline<br/><b>10/4 Exam 1</b><br/>10/6 Fall Break</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="center">7</td>
 <td align="center">15~17<br/>10/9 - 10/13</td>
-<td align="left">10/10 PS6 Release<br/>10/9 Fall Break<br/>10/10 Substitute Monday Schedule</td>
+<td align="left">10/9 Fall Break<br/>10/10 PS5 Release<br/>10/10 Substitute Monday Schedule</td>
 <td align="left">Continuous Probability<br/>Important Distributions</td>
 </tr>
 <tr>
 <td align="center">8</td>
 <td align="center">18~20<br/>10/16 - 10/20</td>
-<td align="left">10/16 PS7 Release<br/>10/17 PS6 Due</td>
+<td align="left">10/18 PS5 Due<br/>10/18 PS6 Release</td>
 <td align="left">Central Limit Theorem<br/>Joint Probability</td>
 </tr>
 <tr>
 <td align="center">9</td>
 <td align="center">21~23<br/>10/23 - 10/27</td>
-<td align="left">10/23 PS8 Release<br/>10/23 PS7 Due</td>
+<td align="left">10/25 PS6 Due<br/>10/25 PS7 Release</td>
 <td align="left">More Central Limit Theorem<br/>Linear Algebra</td>
 </tr>
 <tr>
 <td align="center">10</td>
 <td align="center">24~26<br/>10/30 - 11/3</td>
-<td align="left">10/30 PS9 Release<br/> 10/30 PS8 Due</td>
+<td align="left">11/1 PS7 Due<br/>11/1 Sample Exam 2 Release</td>
 <td align="left">Linear Algebra<br/>Eigenvalues and PCA</td>
 </tr>
 <tr>
 <td align="center">11</td>
 <td align="center">27<br/>11/6 - 11/10</td>
-<td align="left">11/6 PS9 Due<br/>11/6 Review Section<br/><b>11/8 Exam 2</b></td>
+<td align="left">11/6 Review Section<br/><b>11/8 Exam 2</b><br/>11/8 PS8 Release</td>
 <td align="left">Martingales and Fraud Detection*</td>
 </tr>
 <tr>
 <td align="center">12</td>
 <td align="center">28~30<br/>11/13 - 11/17</td>
-<td align="left">11/13 PS10 Release<br/></td>
+<td align="left">11/15 PS8 Due<br/>11/15 PS9 Release</td>
 <td align="left">Markov Chains<br/>Ergodic Markov Chains</td>
 </tr>
 <tr>
 <td align="center">13</td>
 <td align="center">31<br/>11/20 - 11/24</td>
-<td align="left">11/20 PS11 Release<br/>11/20 PS10 Due<br/>11/22-24 Thanksgiving Holidays</td>
+<td align="left">11/22-24 Thanksgiving Holidays</td>
 <td align="left">Page Rank</td>
 </tr>
 <tr>
 <td align="center">14</td>
 <td align="center">32~34<br/>11/27 - 12/1</td>
-<td align="left">12/1 PS12 Release<br/>12/1 PS11 Due</td>
+<td align="left">11/29 PS9 Due<br/>11/29 PS10 Release</td>
 <td align="left">Intro to Branching Processes<br/>Intro to Queuing Theory<br/>Intro to Stochastic Process</td>
 </tr>
 <tr>
 <td align="center">15</td>
 <td align="center">35~37<br/>12/4 - 12/8</td>
-<td align="left">12/8 PS12 Due</td>
+<td align="left">12/6 PS10 Due<br/>12/6 Sample Final Exam Release</td>
 <td align="left">Random Walks<br/>Probability Theory in TCS: Probability Methods*</td>
 </tr>
 <tr>
